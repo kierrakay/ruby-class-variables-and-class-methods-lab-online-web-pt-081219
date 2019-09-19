@@ -34,14 +34,14 @@
 
   @@genres.group_by(&:itself).each {|k,v| @@genre_count[k] = v.count}
 
- return @@genre_count
+  @@genre_count
 end
 
  def self.artist_count
  @@artist_count = {}
 
   @@artists.group_by(&:itself).each {|k,v| @@artist_count[k] = v.count}
-
- return @@artist_count
+  
+  @@artist_count
 end
 end
